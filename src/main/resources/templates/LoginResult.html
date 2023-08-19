@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="layouts/defaultLayout" xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+<body>
+<div class="container" th:object="${loginModel}" layout:fragment="content">
+    <p>Username: <span th:text="*{username}">default</span></p>
+    <p>Password: <span th:text="*{password}">default</span></p>
+</div>
+</body>
+</html>
